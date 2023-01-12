@@ -10,7 +10,7 @@ from .utils import *
 
 
 class M3InferenceModel(nn.Module):
-    def __init__(self, device='cuda' if torch.cuda.is_available() else 'cpu'):
+    def __init__(self, device='cpu'):
         super(M3InferenceModel, self).__init__()
 
         self.device = device
